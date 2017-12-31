@@ -1,2 +1,4 @@
 *.egg_info
 *.eggs
+*.egg_info/
+*.egg-info/

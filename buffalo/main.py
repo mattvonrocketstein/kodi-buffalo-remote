@@ -3,8 +3,9 @@
 import time
 import pygame
 
-from .axis import BuffaloAxis
-from .buttons import BuffaloButtons
+from buffalo.axis import BuffaloAxis
+from buffalo.buttons import BuffaloButtons
+
 JOYSTICK_POLL_DELTA = .05
 
 

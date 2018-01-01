@@ -2,9 +2,9 @@
 """
 import os
 import pygame
-from ._kodi import Kodi
-from .util import joystick_summary
-from .main import Buffalo
+from buffalo._kodi import Kodi
+from buffalo.util import joystick_summary
+from buffalo.main import Buffalo
 
 
 def main():

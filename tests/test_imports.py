@@ -5,6 +5,8 @@ from unittest import TestCase
 
 import buffalo
 from buffalo.main import Buffalo
+from buffalo.axis import BuffaloAxis
+from buffalo.buttons import BuffaloButtons
 
 
 class Test(TestCase):

@@ -27,3 +27,23 @@ export KODI_USER=guest
 export KODI_PASSWORD=guest
 sudo buffalo
 ```
+
+Run the tests with 'python setup.py test'
+
+## Known Issues 
+
+<!-- **Platform is Linux only?**  Yes, this uses `evdev` which  -->
+**Why Sudo?**
+
+Sometimes pygame / sdl seem to require root even when `SDL_VIDEODRIVER`is set to `dummy` (as is our default).  You might never be affected by this if you're actually running from xwindows, but
+
+Errors like what you see below are most likely caused by not using sudo, which
+
+```
+Traceback (most recent call last):
+  File "/home/pi/tmp/bin/buffalo", line 10, in <module>
+    sys.exit(main())
+  File "/home/pi/tmp/src/buffalo/buffalo/cli/entry.py", line 13, in main
+    pygame.display.init()
+pygame.error: Unable to open a console terminal
+```

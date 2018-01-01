@@ -25,5 +25,5 @@ export KODI_HOST=localhost
 export KODI_PORT=8080
 export KODI_USER=guest
 export KODI_PASSWORD=guest
-buffalo
+sudo buffalo
 ```

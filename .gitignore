@@ -3,3 +3,5 @@
 *.egg_info/
 *.egg-info/
 .tox
+*.pyc
+.cache/
